@@ -1,6 +1,6 @@
 {
-    "name": "ledger_home_page",
-    "short_name": "ledger_home_page",
+    "name": "ledger_app_home_page",
+    "short_name": "ledger_app_home_page",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

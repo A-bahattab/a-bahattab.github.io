@@ -1,6 +1,6 @@
 {
-    "name": "dashbord",
-    "short_name": "dashbord",
+    "name": "bahattab_test",
+    "short_name": "bahattab_test",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

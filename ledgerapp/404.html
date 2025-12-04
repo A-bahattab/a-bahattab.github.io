@@ -6,18 +6,23 @@
     <script>
       // GitHub Pages SPA redirect for Flutter web with path URL strategy.
       (function () {
-        var basePath = '/ledgerapp';
         var path = window.location.pathname || '/';
         var search = window.location.search || '';
         var hash = window.location.hash || '';
 
-        // Remove the base path from the current path.
-        if (path.startsWith(basePath)) {
-          path = path.slice(basePath.length);
-        }
-        path = path.replace(/^\/+/, ''); // strip leading slashes
+        // Auto-detect base path (repo name) from the URL.
+        // Example: /ledgerapp/privacy -> basePath '/ledgerapp'
+        var segments = path.split('/').filter(Boolean);
+        var basePath = segments.length ? '/' + segments[0] : '';
 
-        var target = basePath + '/#/' + path;
+        // Remove the base path from the current path.
+        var trimmed = path;
+        if (basePath && path.startsWith(basePath)) {
+          trimmed = path.slice(basePath.length);
+        }
+        trimmed = trimmed.replace(/^\/+/, ''); // strip leading slashes
+
+        var target = basePath + '/#/' + trimmed;
         if (search) target += search;
         if (hash) target += hash;
 

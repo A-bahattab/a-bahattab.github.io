@@ -3,11 +3,11 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"flutter_bootstrap.js": "f5f4a8912ff010ad26b22da480676e79",
+const RESOURCES = {"flutter_bootstrap.js": "0474e966ac89e581c96e75794583c952",
 "version.json": "12dda081ddccab51d62928d1d3a1c323",
 "index.html": "b5e68d829ca47d0dc31597561416d113",
 "/": "b5e68d829ca47d0dc31597561416d113",
-"main.dart.js": "d499defb1dafa2353715b815f6b41bac",
+"main.dart.js": "9010f4df488ffcc1aa8f4bc9d4c2de5a",
 "flutter.js": "888483df48293866f9f41d3d9274a779",
 "favicon.png": "81ea4b404c05000d9a2deaf50a6d3e38",
 "icons/Icon-192.png": "064d4ee5bccfd158ea6322a5a9749f84",
@@ -24,7 +24,7 @@ const RESOURCES = {"flutter_bootstrap.js": "f5f4a8912ff010ad26b22da480676e79",
 "assets/AssetManifest.bin": "c56112621f2a304f2877d0679a31492d",
 "assets/fonts/Electrolize-Regular.ttf": "1be3e0aaeb2bbd1985615a49da7f2eaf",
 "assets/fonts/Montserrat-Regular.ttf": "ee6539921d713482b8ccd4d0d23961bb",
-"assets/fonts/MaterialIcons-Regular.otf": "1ed9eda8c7ddd219ff8a3c29d122e96d",
+"assets/fonts/MaterialIcons-Regular.otf": "a6f168c985c924edc52c0fbac57648e8",
 "assets/assets/images/prsnl.png": "a63d43260c62163a47a461da6234d446",
 "assets/assets/images/home.png": "8f5d04207cea51163f97511a83876cef",
 "assets/assets/images/customer.png": "86d086260c935ef715ad5bfc2e058504",

@@ -61318,7 +61318,7 @@ else q.push(A.cs(A.c([B.vS,B.eW,B.w6,B.eW,new A.wh(p,o)],r),B.B,B.u,B.y))
 q.push(A.cD(o,o,B.q,m,o,o,o,1,B.zN,o,o,o,1/0))
 r=n?B.iZ:B.aA
 p=A.O(a).ok.z
-q.push(new A.j6(r,o,o,A.bg("LedgerBook \xa9 2024 \u2013 built for everyday market credit tracking.",p==null?o:p.xy(B.t,B.a4)),o))
+q.push(new A.j6(r,o,o,A.bg("LedgerBook \xa9 2026 \u2013 built for everyday market credit tracking.",p==null?o:p.xy(B.t,B.a4)),o))
 return A.cD(o,A.cs(q,l,B.u,B.y),B.q,o,o,new A.c9(o,o,o,o,o,new A.jE(B.fe,B.fd,B.bK,s,o,o),B.Z),o,o,o,B.zV,o,o,1/0)}}
 A.FR.prototype={
 N(a){var s,r,q,p=null,o=A.O(a).ax.y

@@ -28,6 +28,27 @@
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
+  <script>
+    (function () {
+      var basePath = '/ledgerbook/';
+      var currentPath = window.location.pathname;
+
+      if (!currentPath.startsWith(basePath)) {
+        window.location.replace(basePath);
+        return;
+      }
+
+      var route = currentPath.substring(basePath.length);
+      var target =
+        window.location.origin +
+        basePath +
+        '?route=' +
+        encodeURIComponent(route) +
+        window.location.hash;
+
+      window.location.replace(target);
+    })();
+  </script>
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>

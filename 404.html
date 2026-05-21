@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+  -->
+  <!-- Set base href to the repo subpath so routes resolve under /ledgerbook/ -->
+  <base href="/ledgerbook/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="ledger_book_home_page">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>ledger_book_home_page</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <script>
+    (function () {
+      var basePath = '/ledgerbook/';
+      var currentPath = window.location.pathname;
+
+      if (!currentPath.startsWith(basePath)) {
+        window.location.replace(basePath);
+        return;
+      }
+
+      var route = currentPath.substring(basePath.length);
+      var target =
+        window.location.origin +
+        basePath +
+        '?route=' +
+        encodeURIComponent(route) +
+        window.location.hash;
+
+      window.location.replace(target);
+    })();
+  </script>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
